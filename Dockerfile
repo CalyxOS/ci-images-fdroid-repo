@@ -21,7 +21,8 @@ RUN apt-get update \
 		git \
 		fdroidserver \
 		lzip \
-		wget
+		wget \
+	&& apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Debian has apksigner depend on binfmt support which isn't very docker friendly
 # We create a shell wrapper instead
