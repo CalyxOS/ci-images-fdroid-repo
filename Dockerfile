@@ -25,7 +25,7 @@ RUN apt-get update \
 
 # Debian has apksigner depend on binfmt support which isn't very docker friendly
 # We create a shell wrapper instead
-RUN echo -e '#!/bin/sh\njava -jar /usr/lib/android-sdk/build-tools/debian/apksigner.jar "$@"' > /usr/local/bin/apksigner \
+RUN printf '#!/bin/sh\njava -jar /usr/lib/android-sdk/build-tools/debian/apksigner.jar "$@"' > /usr/local/bin/apksigner \
 	&& chmod +x /usr/local/bin/apksigner
 
 COPY test /
