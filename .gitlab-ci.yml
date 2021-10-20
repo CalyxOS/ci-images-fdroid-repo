@@ -32,5 +32,5 @@ release:
     - docker tag $TEST_IMAGE $RELEASE_IMAGE
     - docker push $RELEASE_IMAGE
   only:
-    - master
+    - main
     - tags
