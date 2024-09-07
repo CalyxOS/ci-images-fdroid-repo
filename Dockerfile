@@ -1,5 +1,4 @@
-from debian:bullseye
-MAINTAINER chirayu@calyxinstitute.org
+FROM debian:bullseye
 
 ENV LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive
