@@ -12,7 +12,7 @@ variables:
   RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
 
 before_script:
-  - echo $CI_BUILD_TOKEN | docker login -u gitlab-ci-token --password-stdin registry.gitlab.com
+  - echo $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin registry.gitlab.com
 
 build:
   stage: build
