@@ -22,7 +22,7 @@ RUN apt-get update \
 		python3 python3-pip \
 		wget \
 	&& pip install --break-system-packages \
-		git+https://github.com/androguard/androguard@v4.1.2 \
+		git+https://github.com/androguard/androguard@a458772eac9c2e439c18ff29a863ec53af69c869 \
 		git+https://gitlab.com/fdroid/fdroidserver@2.3a2
 
 # Debian has apksigner depend on binfmt support which isn't very docker friendly
