@@ -16,5 +16,6 @@ fdroid --version
 fdroidserver/fdroid --version
 apksigner version
 androguard --version
+jarsigner
 
 rm -rf $TESTDIR
