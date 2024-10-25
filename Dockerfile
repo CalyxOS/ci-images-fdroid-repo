@@ -21,6 +21,7 @@ RUN apt-get update \
 		lzip \
 		openjdk-17-jdk-headless \
 		python3 python3-pip \
+		rsync \
 		wget \
 	&& pip install --break-system-packages \
 		git+https://github.com/androguard/androguard@16a6bd21946bfe3d75639ffd3d96957971b6553f \
