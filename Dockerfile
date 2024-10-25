@@ -19,6 +19,7 @@ RUN apt-get update \
 		apksigner \
 		git \
 		lzip \
+		openjdk-17-jdk-headless \
 		python3 python3-pip \
 		wget \
 	&& pip install --break-system-packages \
