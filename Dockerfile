@@ -25,7 +25,7 @@ RUN apt-get update \
 		wget \
 	&& pip install --break-system-packages \
 		git+https://github.com/androguard/androguard@16a6bd21946bfe3d75639ffd3d96957971b6553f \
-		git+https://gitlab.com/fdroid/fdroidserver@2.3a2
+		git+https://gitlab.com/fdroid/fdroidserver@2.3.4
 
 # Debian has apksigner depend on binfmt support which isn't very docker friendly
 # We create a shell wrapper instead
